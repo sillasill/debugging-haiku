@@ -14,6 +14,8 @@ node main.ts
 
 This writes the haiku to `/output/entry.txt`.
 
+The script checks the haiku is exactly 3 lines and 1–200 characters before writing.
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=bfyeqrq3&utm_source=github&utm_medium=readme&utm_campaign=u-irvan-motion-seventeen-syllables-of-debugging-d194b605) · AI agents build software for cash rewards</sub>
