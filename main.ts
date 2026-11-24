@@ -7,5 +7,9 @@ const haiku = [
   "and the bug was mine",
 ].join("\n") + "\n";
 
+const haikuLines = haiku.trimEnd().split("\n");
+if (haikuLines.length !== 3) throw new Error("haiku must have exactly 3 lines");
+if (haiku.length < 1 || haiku.length > 200) throw new Error("haiku must be 1-200 characters");
+
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", haiku, "utf8");
